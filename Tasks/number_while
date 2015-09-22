@@ -1,0 +1,43 @@
+#!/usr/bin/python
+
+# number claulcation via while loop
+
+import sys
+
+userstatus=raw_input("you want to check for largest number (Y/N)  : ")
+
+while True:
+
+
+            if userstatus == "N":
+                sys.exit(0)
+
+
+            elif userstatus == "Y" :
+                num1=input("Print number 1 :  ")
+                num2=input("Print number 2 :  ")
+                num3=input("Print number 3 :  ")
+                if(num1 > num2 and num1 > num3):
+                    print "Number 1 is greter : {}".format(num1)
+                elif(num2 > num3 and num2 > num1):
+                    print "Number 2 is grater: {}".format(num2)
+                elif(num3 > num1 and num3 > num2):
+                    print "Number 3 is grate : {}".format(num3)
+                else:
+                    print "All Threee number are equal:  {}".format(num1)
+            else:
+                print "INVALID INPUT Try Again"
+
+
+            userstatus=raw_input("want to continue  number (Y/N)  : ")
+
+
+
+
+
+
+
+
+
+
+

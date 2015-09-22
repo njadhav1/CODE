@@ -1,0 +1,14 @@
+#!/usr/bin/python -d
+
+days=['yesterday', 'today','tomorrow','dayafter']
+
+
+#print "Give list is {} , {} ,{}, {}".format(days_one,days_two,days_three,days_four)
+
+
+for val_days in days:
+    remove_count=days.index(val_days)+1
+    #print remove_count
+    days_val_days=val_days[:remove_count].swapcase()+val_days[remove_count:]
+    print days_val_days
+
